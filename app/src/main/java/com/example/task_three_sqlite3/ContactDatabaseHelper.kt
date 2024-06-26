@@ -61,6 +61,4 @@ class ContactDatabaseHelper(context: Context) : SQLiteOpenHelper(context,DATABAS
         db.delete(TABLE_CONTACTS, "$COLUMN_ID = ?", arrayOf(id.toString()))
         db.close()
     }
-
-
 }
